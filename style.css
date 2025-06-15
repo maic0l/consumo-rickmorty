@@ -1,7 +1,55 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #121212;
+  background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1000');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
 }
 
 .card {
   border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.status-alive {
+  color: #28a745;
+}
+
+.status-dead {
+  color: #dc3545;
+}
+
+.status-unknown {
+  color: #6c757d;
+}
+
+#loading {
+  display: none;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.pagination .page-link {
+  color: #0d6efd;
 }
